@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Calculadora IdMC</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+
+    <section class="informe">
+        <h2>Prestar atención</h2>
+        <ul>
+            <li>Este método es fiable para personas de entre 18 y 65 años de edad.</li>
+            <li>No es válido para personas muy musculosas y atletas.</li>
+            <li>Tampoco es válido para mujeres embarazadas o en periodo de lactancia.</li>
+        </ul>
+    </section>
+
+    <section class="calculadora">
+        <h2 class="subtit-2">Calculadora de índice de masa corporal</h2>
+        <div class="contenedor">
+            <div>
+                <label for="peso">Peso en kilogramos</label>
+                <input type="text" name="peso" id="peso" placeholder="0.00 kg">
+            </div>
+
+            <div>
+                <label for="altura">Altura en centímetros</label>
+                <input type="text" name="altura" id="altura" placeholder="0 cm">
+            </div>
+
+
+            <input type="submit" name="calcular" id="calcular" Value="Calcular">
+        </div>
+
+        <p class="imc">Su resultado de IMC: <span id="resultado"></span></p>
+
+        <table>
+            <tr>
+                <th>Índice de Masa Corporal</th>
+                <th>Composición corporal</th>
+            </tr>
+            <tr>
+                <td>Menor a 16.00</td>
+                <td>Infrapeso: Delgadez Severa</td>
+            </tr>
+            <tr>
+                <td>16.00 - 16.99</td>
+                <td>Infrapeso: Delgadez Moderada</td>
+            </tr>
+            <tr>
+                <td>17.00 - 18.49</td>
+                <td>Infrapeso: Delgadez Aceptable</td>
+            </tr>
+            <tr>
+                <td>18.50 - 24.99</td>
+                <td>Peso Normal</td>
+            </tr>
+            <tr>
+                <td>25.00 - 29.99</td>
+                <td>Sobrepeso</td>
+            </tr>
+            <tr>
+                <td>30.00 - 34.99</td>
+                <td>Obesidad: Tipo 1</td>
+            </tr>
+            <tr>
+                <td>35.00 - 40.00</td>
+                <td>Obesidad: Tipo 2</td>
+            </tr>
+            <tr>
+                <td>Mayor a 40.00</td>
+                <td>Obesidad: Tipo 3</td>
+            </tr>
+        </table>
+    </section>
+
+
+
+    <script src="ecuacion.js"></script>
+</body>
+
+</html>
